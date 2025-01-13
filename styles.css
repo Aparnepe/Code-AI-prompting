@@ -1,0 +1,170 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #1c1c1c;
+    background-color: #fafafa;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #623d2d; /* Rich mocha brown */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Coffee bean background using CSS shapes */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(ellipse at 50% 50%, #4b2e1c 30%, transparent 35%), 
+        radial-gradient(ellipse at 50% 50%, #4b2e1c 30%, transparent 35%);
+    background-size: 60px 30px; /* Adjusted size for oval-shaped beans */
+    background-position: 0 0, 30px 15px; /* Staggered pattern for better flow */
+    background-repeat: repeat;
+    z-index: -1; /* Push the background behind header content */
+}
+
+.navbar {
+    background-color: #815a41; /* Lighter brown tone */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.logo-container {
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.brand-name {
+    font-size: 2.8em;
+    margin: 10px 0;
+    color: #ffdd99; /* Soft golden tone */
+}
+
+.tagline {
+    font-size: 1.3em;
+    color: #ffecd1; /* Creamy tone */
+    font-style: italic;
+}
+
+.main-content {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #623d2d; /* Rich mocha brown */
+    border-bottom: 2px solid #623d2d;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 20px;
+    margin-top: 10px;
+    list-style: none; /* Remove default bullets */
+}
+
+li::before {
+    content: "☕"; /* Coffee cup emoji as the bullet point */
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #4b2e1c; /* Coffee bean brown */
+}
+
+.section-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Ensure image fills the space */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px;
+}
+
+.contact-section {
+    padding: 20px;
+    margin-top: 40px;
+    color: #1c1c1c; /* Standard text color */
+    background-color: transparent; /* Removed gray background */
+    border: none; /* No border */
+}
+
+.contact-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for the form */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #623d2d; /* Matching brown color */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    background-color: #623d2d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #815a41; /* Slightly lighter brown on hover */
+}
+
+
+footer {
+    background-color: #815a41; /* Footer background */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
